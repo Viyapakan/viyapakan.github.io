@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional IoT and Embedded Systems Engineer Portfolio">
+    <title>Shanmugam Viyapakan - IoT & Embedded Systems Engineer</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader">
+            <div class="circuit-loader">
+                <div class="circuit-line"></div>
+                <div class="circuit-line"></div>
+                <div class="circuit-line"></div>
+            </div>
+            <p class="loading-text">Initializing Systems...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">SV</span>
+                <span class="logo-subtitle">Shanmugam Viyapakan</span>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link" data-section="home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" data-section="about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+                </li>
+            </ul>
+            
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-background">
+                <div class="circuit-pattern"></div>
+                <div class="floating-particles"></div>
+            </div>
+            
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">IoT & Embedded</span>
+                        <span class="title-line">Systems Engineer</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Crafting intelligent solutions that bridge the physical and digital worlds
+                        through cutting-edge embedded systems and IoT technologies.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="cta-button primary">View Projects</a>
+                        <a href="#contact" class="cta-button secondary">Get In Touch</a>
+                    </div>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="06">0</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="2">0</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="12">0</span>
+                        <span class="stat-label">Technologies Mastered</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <span class="scroll-text">Scroll to explore</span>
+                <div class="scroll-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Passionate about creating intelligent solutions</p>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="about-description">
+                            I am an Electrical and Electronic Engineering undergraduate at the University of Sri Jayewardenepura, 
+                            with over two years of hands-on experience in designing and developing innovative solutions that 
+                            connect the physical and digital worlds. Alongside my academics, I have gained six months of 
+                            professional experience as an IoT/Embedded Engineer, strengthening my ability to deliver 
+                            practical and impactful solutions.
+                        </p>
+                        
+                        <p class="about-description">
+                            My expertise spans microcontroller programming (ESP32, STM32, Arduino), IoT communication protocols, 
+                            and cloud-based architectures, with a growing focus on Machine Learning integration in embedded 
+                            and IoT systems. This unique combination enables me to create intelligent, adaptive, and 
+                            future-ready solutions.
+                        </p>
+                        
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-microchip"></i>
+                                <span>Embedded Systems Design</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-wifi"></i>
+                                <span>IoT Architecture</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-code"></i>
+                                <span>Firmware Development</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-brain"></i>
+                                <span>Machine Learning</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-image">
+                        <div class="image-container">
+                            <img src="images/viyapakan.jpg" alt="Shanmugam Viyapakan - Undergraduate" class="profile-image">
+                            <div class="image-overlay">
+                                <div class="tech-icons">
+                                    <i class="fab fa-raspberry-pi"></i>
+                                    <i class="fas fa-microchip"></i>
+                                    <i class="fas fa-wifi"></i>
+                                    <i class="fas fa-database"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Skills & Technologies</h2>
+                    <p class="section-subtitle">Expertise across the full IoT and embedded systems stack</p>
+                </div>
+                
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-code"></i>
+                            <h3>Programming Languages</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <span class="skill-name">C/C++</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="88"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Python</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="82"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Embedded C</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">HTML</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="78"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-microchip"></i>
+                            <h3>Microcontrollers & Hardware</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <span class="skill-name">ESP32</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">STM32</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="78"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Arduino</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="92"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Raspberry Pi</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-network-wired"></i>
+                            <h3>Communication Protocols</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <span class="skill-name">UART/I²C/SPI</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="88"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">WiFi/Bluetooth</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">MQTT/HTTP</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="82"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">LoRa</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-brain"></i>
+                            <h3>Machine Learning & AI</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <span class="skill-name">TensorFlow Lite</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="72"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Edge AI</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Computer Vision</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="68"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">IoT Data Analytics</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Innovative solutions showcasing technical expertise</p>
+                </div>
+                
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="images/smart farming/sm1.jpg" alt="Smart Farming IoT System">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" title="View Live Demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link" title="View Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-content">
+                            <h3 class="project-title">Smart Farming IoT System</h3>
+                            <p class="project-description">
+                                Industry-level multi-farmer smart irrigation system with integrated machine learning 
+                                for leaf disease detection. Features distributed sensor networks and intelligent 
+                                crop monitoring across multiple farm locations.
+                            </p>
+                            
+                            <div class="project-tech">
+                                <span class="tech-tag">STM32</span>
+                                <span class="tech-tag">ESP32</span>
+                                <span class="tech-tag">TensorFlow</span>
+                                <span class="tech-tag">LoRa</span>
+                                <span class="tech-tag">MQTT</span>
+                                <span class="tech-tag">FreeRTOS</span>
+                                <span class="tech-tag">FastAPI</span>
+                            </div>
+                            
+                            <div class="project-stats">
+                                <div class="stat">
+                                    <i class="fas fa-seedling"></i>
+                                    <span>Currently Active</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="images/projects/industrial-monitor.jpg" alt="Industrial IoT Monitoring System">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" title="View Live Demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link" title="View Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-content">
+                            <h3 class="project-title">Industrial IoT Monitor</h3>
+                            <p class="project-description">
+                                Real-time industrial equipment monitoring system with predictive maintenance 
+                                capabilities, using STM32 and multiple sensor arrays for comprehensive data collection.
+                            </p>
+                            
+                            <div class="project-tech">
+                                <span class="tech-tag">STM32</span>
+                                <span class="tech-tag">LoRaWAN</span>
+                                <span class="tech-tag">FreeRTOS</span>
+                                <span class="tech-tag">InfluxDB</span>
+                            </div>
+                            
+                            <div class="project-stats">
+                                <div class="stat">
+                                    <i class="fas fa-industry"></i>
+                                    <span>Industrial Grade</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="images/projects/wearable-health.jpg" alt="Wearable Health Monitor">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" title="View Live Demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link" title="View Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-content">
+                            <h3 class="project-title">Wearable Health Monitor</h3>
+                            <p class="project-description">
+                                Ultra-low-power wearable device for continuous health monitoring with 
+                                BLE connectivity, featuring heart rate, SpO2, and temperature sensors.
+                            </p>
+                            
+                            <div class="project-tech">
+                                <span class="tech-tag">nRF52</span>
+                                <span class="tech-tag">BLE</span>
+                                <span class="tech-tag">C++</span>
+                                <span class="tech-tag">Flutter</span>
+                            </div>
+                            
+                            <div class="project-stats">
+                                <div class="stat">
+                                    <i class="fas fa-heartbeat"></i>
+                                    <span>Healthcare</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>2023</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="images/projects/drone-control.jpg" alt="Autonomous Drone System">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" title="View Live Demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link" title="View Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-content">
+                            <h3 class="project-title">Autonomous Drone Control</h3>
+                            <p class="project-description">
+                                Advanced flight controller system with computer vision capabilities for 
+                                autonomous navigation, obstacle avoidance, and precision landing.
+                            </p>
+                            
+                            <div class="project-tech">
+                                <span class="tech-tag">Pixhawk</span>
+                                <span class="tech-tag">OpenCV</span>
+                                <span class="tech-tag">ROS</span>
+                                <span class="tech-tag">Python</span>
+                            </div>
+                            
+                            <div class="project-stats">
+                                <div class="stat">
+                                    <i class="fas fa-plane"></i>
+                                    <span>Aerospace</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>2023</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="projects-cta">
+                    <a href="#contact" class="cta-button primary">View All Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Let's Connect</h2>
+                    <p class="section-subtitle">Ready to discuss your next IoT or embedded systems project?</p>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>viyapakanshanmugam@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Phone</h3>
+                                <p>+94 773787113</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Location</h3>
+                                <p>Colombo, Sri Lanka</p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="#" class="social-link" title="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-link" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="social-link" title="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link" title="ResearchGate">
+                                <i class="fab fa-researchgate"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Full Name</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email Address</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" required rows="5"></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                        
+                        <button type="submit" class="submit-button">
+                            <span class="button-text">Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>&copy; 2024 Shanmugam Viyapakan. All rights reserved.</p>
+                </div>
+                <div class="footer-right">
+                    <p>Designed & Built with precision</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
