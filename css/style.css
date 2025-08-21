@@ -1,3 +1,42 @@
+/* Slideshow styles for project images */
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.slide {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    transition: opacity 0.5s;
+}
+.slideshow-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.4);
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+    padding: 0.2em 0.5em;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 2;
+    transition: background 0.2s;
+}
+.slideshow-btn.prev {
+    left: 10px;
+}
+.slideshow-btn.next {
+    right: 10px;
+}
+.slideshow-btn:hover {
+    background: var(--accent-primary);
+    color: #222;
+}
 /* ===== CSS RESET & BASE STYLES ===== */
 * {
     margin: 0;

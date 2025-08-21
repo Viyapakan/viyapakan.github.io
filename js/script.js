@@ -1,3 +1,31 @@
+// Simple slideshow logic for project images
+function showPrevSlide(containerId) {
+    const container = document.getElementById(containerId);
+    const slides = container.getElementsByClassName('slide');
+    let current = 0;
+    for (let i = 0; i < slides.length; i++) {
+        if (slides[i].style.display === 'block') {
+            current = i;
+            slides[i].style.display = 'none';
+        }
+    }
+    let prev = (current - 1 + slides.length) % slides.length;
+    slides[prev].style.display = 'block';
+}
+
+function showNextSlide(containerId) {
+    const container = document.getElementById(containerId);
+    const slides = container.getElementsByClassName('slide');
+    let current = 0;
+    for (let i = 0; i < slides.length; i++) {
+        if (slides[i].style.display === 'block') {
+            current = i;
+            slides[i].style.display = 'none';
+        }
+    }
+    let next = (current + 1) % slides.length;
+    slides[next].style.display = 'block';
+}
 // ===== PROFESSIONAL PORTFOLIO JAVASCRIPT =====
 // High-end, luxury interactions and animations
 
