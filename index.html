@@ -80,8 +80,8 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <h1 class="hero-title">
-                        <span class="title-line"> Embedded</span>
-                        <span class="title-line">Systems Engineer</span>
+                        <span class="title-line"> IoT & Embedded</span>
+                        <span class="title-line"> Systems Engineer</span>
                     </h1>
                     <p class="hero-subtitle">
                         Crafting intelligent solutions that bridge the physical and digital worlds
@@ -490,80 +490,88 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Let's Connect</h2>
-                    <p class="section-subtitle">Ready to discuss your next IoT or embedded systems project?</p>
-                </div>
-                
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h3>Email</h3>
-                                <p>viyapakanshanmugam@gmail.com</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h3>Phone</h3>
-                                <p>+94 773787113</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h3>Location</h3>
-                                <p>Colombo, Sri Lanka</p>
-                            </div>
-                        </div>
-                        
-                        <div class="social-links">
-                            <a href="https://www.linkedin.com/in/viyapakan-shanmugam-3a6864244/overlay/about-this-profile/?trk=public-profile-join-page&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BQOGES04ySICs0H5aEnMzQQ%3D%3D" class="social-link" title="LinkedIn" target="_blank">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                            <a href="https://github.com/Viyapakan" class="social-link" title="GitHub" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <form action="https://formsubmit.co/viyapakanshanmugam@gmail.com" method="POST" class="contact-form" id="contactForm">
-                                                        <div class="container">
-                                                            <form target="_blank" action="https://formsubmit.co/viyapakanshanmugam@gmail.com" method="POST">
-                                                                <div class="form-group">
-                                                                    <div class="form-row">
-                                                                        <div class="col">
-                                                                            <input type="text" name="name" class="form-control" placeholder="Full Name" required>
-                                                                        </div>
-                                                                        <div class="col">
-                                                                            <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
-                                                                </div>
-                                                                <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
-                                                            </form>
-                                                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
+    <!-- Contact Section --> 
+<section id="contact" class="contact-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="section-subtitle">Ready to discuss your next IoT or embedded systems project?</p>
+    </div>
+    
+    <div class="contact-content">
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="contact-details">
+            <h3>Email</h3>
+            <p>viyapakanshanmugam@gmail.com</p>
+          </div>
+        </div>
+        
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div class="contact-details">
+            <h3>Phone</h3>
+            <p>+94 773787113</p>
+          </div>
+        </div>
+        
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="contact-details">
+            <h3>Location</h3>
+            <p>Colombo, Sri Lanka</p>
+          </div>
+        </div>
+        
+        <div class="social-links">
+          <a href="#" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link" title="ResearchGate"><i class="fab fa-researchgate"></i></a>
+        </div>
+      </div>
+      
+      <!-- Modified Form with Formspree -->
+      <form class="contact-form" id="contactForm" 
+            action="https://formspree.io/f/xdkdrlde" 
+            method="POST">
+        
+        <div class="form-group">
+          <input type="text" id="name" name="name" required>
+          <label for="name">Full Name</label>
+        </div>
+        
+        <div class="form-group">
+          <input type="email" id="email" name="email" required>
+          <label for="email">Email Address</label>
+        </div>
+        
+        <div class="form-group">
+          <input type="text" id="subject" name="subject" required>
+          <label for="subject">Subject</label>
+        </div>
+        
+        <div class="form-group">
+          <textarea id="message" name="message" required rows="5"></textarea>
+          <label for="message">Message</label>
+        </div>
+        
+        <button type="submit" class="submit-button">
+          <span class="button-text">Send Message</span>
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
 
     <!-- Footer -->
     <footer class="footer">
