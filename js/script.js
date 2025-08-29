@@ -512,58 +512,54 @@ class PortfolioApp {
         const submitButton = form.querySelector('.submit-button');
         const buttonText = submitButton.querySelector('.button-text');
         const originalText = buttonText.textContent;
-        
+
         // Show loading state
         submitButton.disabled = true;
         buttonText.textContent = 'Sending...';
         submitButton.style.background = 'linear-gradient(135deg, #6c757d 0%, #495057 100%)';
-        
-        // Simulate form submission (replace with actual API call)
+
         try {
-            await this.simulateFormSubmission(new FormData(form));
-            
-            // Success state
-            buttonText.textContent = 'Message Sent!';
-            submitButton.style.background = 'linear-gradient(135deg, #28a745 0%, #20c997 100%)';
-            
-            // Reset form
-            setTimeout(() => {
-                form.reset();
-                buttonText.textContent = originalText;
-                submitButton.style.background = '';
-                submitButton.disabled = false;
-                
-                // Remove all field feedback
-                form.querySelectorAll('.field-feedback').forEach(feedback => {
-                    feedback.remove();
-                });
-            }, 3000);
-            
+            // Real API call to Formspree
+            const formData = new FormData(form);
+            const response = await fetch(form.action, {
+                method: form.method,
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                // Success state
+                buttonText.textContent = 'Message Sent!';
+                submitButton.style.background = 'linear-gradient(135deg, #28a745 0%, #20c997 100%)';
+
+                // Reset form
+                setTimeout(() => {
+                    form.reset();
+                    buttonText.textContent = originalText;
+                    submitButton.style.background = '';
+                    submitButton.disabled = false;
+
+                    // Remove all field feedback
+                    form.querySelectorAll('.field-feedback').forEach(feedback => {
+                        feedback.remove();
+                    });
+                }, 3000);
+            } else {
+                throw new Error('Failed to send message');
+            }
         } catch (error) {
             // Error state
             buttonText.textContent = 'Error - Try Again';
             submitButton.style.background = 'linear-gradient(135deg, #dc3545 0%, #c82333 100%)';
-            
+
             setTimeout(() => {
                 buttonText.textContent = originalText;
                 submitButton.style.background = '';
                 submitButton.disabled = false;
             }, 3000);
         }
-    }
-
-    simulateFormSubmission(formData) {
-        return new Promise((resolve, reject) => {
-            // Simulate network delay
-            setTimeout(() => {
-                // Simulate 90% success rate
-                if (Math.random() > 0.1) {
-                    resolve({ success: true });
-                } else {
-                    reject(new Error('Network error'));
-                }
-            }, 2000);
-        });
     }
 
     // ===== INTERSECTION OBSERVER =====
